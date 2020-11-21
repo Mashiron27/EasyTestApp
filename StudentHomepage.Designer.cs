@@ -1,6 +1,6 @@
 ﻿namespace EasyTestApp
 {
-    partial class Teacher_Homepage
+    partial class StudentHomepage
     {
         /// <summary>
         /// Required designer variable.
@@ -30,17 +30,17 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCalendar = new System.Windows.Forms.Button();
-            this.btnClassManagement = new System.Windows.Forms.Button();
-            this.btnStatistics = new System.Windows.Forms.Button();
-            this.btnCorrectExams = new System.Windows.Forms.Button();
-            this.btnCreateExam = new System.Windows.Forms.Button();
+            this.btnClassroom = new System.Windows.Forms.Button();
+            this.btnCheckResults = new System.Windows.Forms.Button();
+            this.btnJoinACourse = new System.Windows.Forms.Button();
+            this.btnGoToExam = new System.Windows.Forms.Button();
             this.logo = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnMiniMax = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.btnProfile = new System.Windows.Forms.Button();
-            this.dateTime = new System.Windows.Forms.DateTimePicker();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.dateTime = new System.Windows.Forms.DateTimePicker();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.lblMsg2 = new System.Windows.Forms.Label();
@@ -54,15 +54,15 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.btnCalendar);
-            this.panel1.Controls.Add(this.btnClassManagement);
-            this.panel1.Controls.Add(this.btnStatistics);
-            this.panel1.Controls.Add(this.btnCorrectExams);
-            this.panel1.Controls.Add(this.btnCreateExam);
+            this.panel1.Controls.Add(this.btnClassroom);
+            this.panel1.Controls.Add(this.btnCheckResults);
+            this.panel1.Controls.Add(this.btnJoinACourse);
+            this.panel1.Controls.Add(this.btnGoToExam);
             this.panel1.Controls.Add(this.logo);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 550);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 2;
             // 
             // btnCalendar
             // 
@@ -78,71 +78,66 @@
             this.btnCalendar.TabIndex = 1;
             this.btnCalendar.Text = "Calendar";
             this.btnCalendar.UseVisualStyleBackColor = false;
-            this.btnCalendar.Click += new System.EventHandler(this.btnCalendar_Click);
             // 
-            // btnClassManagement
+            // btnClassroom
             // 
-            this.btnClassManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(78)))), ((int)(((byte)(80)))));
-            this.btnClassManagement.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnClassManagement.FlatAppearance.BorderSize = 0;
-            this.btnClassManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClassManagement.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClassManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(162)))), ((int)(((byte)(164)))));
-            this.btnClassManagement.Location = new System.Drawing.Point(0, 378);
-            this.btnClassManagement.Name = "btnClassManagement";
-            this.btnClassManagement.Size = new System.Drawing.Size(250, 74);
-            this.btnClassManagement.TabIndex = 1;
-            this.btnClassManagement.Text = "Class Management";
-            this.btnClassManagement.UseVisualStyleBackColor = false;
-            this.btnClassManagement.Click += new System.EventHandler(this.btnClassManagement_Click);
+            this.btnClassroom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(78)))), ((int)(((byte)(80)))));
+            this.btnClassroom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnClassroom.FlatAppearance.BorderSize = 0;
+            this.btnClassroom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClassroom.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClassroom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(162)))), ((int)(((byte)(164)))));
+            this.btnClassroom.Location = new System.Drawing.Point(0, 378);
+            this.btnClassroom.Name = "btnClassroom";
+            this.btnClassroom.Size = new System.Drawing.Size(250, 74);
+            this.btnClassroom.TabIndex = 1;
+            this.btnClassroom.Text = "Classroom";
+            this.btnClassroom.UseVisualStyleBackColor = false;
             // 
-            // btnStatistics
+            // btnCheckResults
             // 
-            this.btnStatistics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(78)))), ((int)(((byte)(80)))));
-            this.btnStatistics.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnStatistics.FlatAppearance.BorderSize = 0;
-            this.btnStatistics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatistics.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStatistics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(162)))), ((int)(((byte)(164)))));
-            this.btnStatistics.Location = new System.Drawing.Point(0, 298);
-            this.btnStatistics.Name = "btnStatistics";
-            this.btnStatistics.Size = new System.Drawing.Size(250, 74);
-            this.btnStatistics.TabIndex = 1;
-            this.btnStatistics.Text = "Statistics";
-            this.btnStatistics.UseVisualStyleBackColor = false;
-            this.btnStatistics.Click += new System.EventHandler(this.btnStatistics_Click);
+            this.btnCheckResults.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(78)))), ((int)(((byte)(80)))));
+            this.btnCheckResults.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCheckResults.FlatAppearance.BorderSize = 0;
+            this.btnCheckResults.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckResults.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckResults.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(162)))), ((int)(((byte)(164)))));
+            this.btnCheckResults.Location = new System.Drawing.Point(0, 298);
+            this.btnCheckResults.Name = "btnCheckResults";
+            this.btnCheckResults.Size = new System.Drawing.Size(250, 74);
+            this.btnCheckResults.TabIndex = 1;
+            this.btnCheckResults.Text = "Check Results";
+            this.btnCheckResults.UseVisualStyleBackColor = false;
             // 
-            // btnCorrectExams
+            // btnJoinACourse
             // 
-            this.btnCorrectExams.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(78)))), ((int)(((byte)(80)))));
-            this.btnCorrectExams.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCorrectExams.FlatAppearance.BorderSize = 0;
-            this.btnCorrectExams.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCorrectExams.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCorrectExams.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(162)))), ((int)(((byte)(164)))));
-            this.btnCorrectExams.Location = new System.Drawing.Point(0, 218);
-            this.btnCorrectExams.Name = "btnCorrectExams";
-            this.btnCorrectExams.Size = new System.Drawing.Size(250, 74);
-            this.btnCorrectExams.TabIndex = 1;
-            this.btnCorrectExams.Text = "Correct Exams";
-            this.btnCorrectExams.UseVisualStyleBackColor = false;
-            this.btnCorrectExams.Click += new System.EventHandler(this.btnCorrectExams_Click);
+            this.btnJoinACourse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(78)))), ((int)(((byte)(80)))));
+            this.btnJoinACourse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnJoinACourse.FlatAppearance.BorderSize = 0;
+            this.btnJoinACourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnJoinACourse.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJoinACourse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(162)))), ((int)(((byte)(164)))));
+            this.btnJoinACourse.Location = new System.Drawing.Point(0, 218);
+            this.btnJoinACourse.Name = "btnJoinACourse";
+            this.btnJoinACourse.Size = new System.Drawing.Size(250, 74);
+            this.btnJoinACourse.TabIndex = 1;
+            this.btnJoinACourse.Text = "Join A Course";
+            this.btnJoinACourse.UseVisualStyleBackColor = false;
             // 
-            // btnCreateExam
+            // btnGoToExam
             // 
-            this.btnCreateExam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(78)))), ((int)(((byte)(80)))));
-            this.btnCreateExam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCreateExam.FlatAppearance.BorderSize = 0;
-            this.btnCreateExam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCreateExam.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateExam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(162)))), ((int)(((byte)(164)))));
-            this.btnCreateExam.Location = new System.Drawing.Point(0, 138);
-            this.btnCreateExam.Name = "btnCreateExam";
-            this.btnCreateExam.Size = new System.Drawing.Size(250, 74);
-            this.btnCreateExam.TabIndex = 1;
-            this.btnCreateExam.Text = "Create Exams";
-            this.btnCreateExam.UseVisualStyleBackColor = false;
-            this.btnCreateExam.Click += new System.EventHandler(this.btnCreateExam_Click);
+            this.btnGoToExam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(78)))), ((int)(((byte)(80)))));
+            this.btnGoToExam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnGoToExam.FlatAppearance.BorderSize = 0;
+            this.btnGoToExam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGoToExam.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGoToExam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(162)))), ((int)(((byte)(164)))));
+            this.btnGoToExam.Location = new System.Drawing.Point(0, 138);
+            this.btnGoToExam.Name = "btnGoToExam";
+            this.btnGoToExam.Size = new System.Drawing.Size(250, 74);
+            this.btnGoToExam.TabIndex = 1;
+            this.btnGoToExam.Text = "Go To Exam";
+            this.btnGoToExam.UseVisualStyleBackColor = false;
             // 
             // logo
             // 
@@ -157,6 +152,16 @@
             this.logo.Size = new System.Drawing.Size(250, 74);
             this.logo.TabIndex = 1;
             this.logo.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnClose);
+            this.panel2.Controls.Add(this.btnMiniMax);
+            this.panel2.Controls.Add(this.btnProfile);
+            this.panel2.Location = new System.Drawing.Point(458, 15);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(530, 95);
+            this.panel2.TabIndex = 4;
             // 
             // btnClose
             // 
@@ -186,17 +191,6 @@
             this.btnMiniMax.TabIndex = 1;
             this.btnMiniMax.Text = "Minimize/Maximize";
             this.btnMiniMax.UseVisualStyleBackColor = false;
-            this.btnMiniMax.Click += new System.EventHandler(this.btnMiniMax_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnClose);
-            this.panel2.Controls.Add(this.btnMiniMax);
-            this.panel2.Controls.Add(this.btnProfile);
-            this.panel2.Location = new System.Drawing.Point(459, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(530, 95);
-            this.panel2.TabIndex = 2;
             // 
             // btnProfile
             // 
@@ -212,7 +206,14 @@
             this.btnProfile.TabIndex = 1;
             this.btnProfile.Text = "Profile";
             this.btnProfile.UseVisualStyleBackColor = false;
-            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dateTime);
+            this.panel3.Location = new System.Drawing.Point(513, 551);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(475, 37);
+            this.panel3.TabIndex = 6;
             // 
             // dateTime
             // 
@@ -222,23 +223,15 @@
             this.dateTime.Size = new System.Drawing.Size(386, 32);
             this.dateTime.TabIndex = 3;
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.dateTime);
-            this.panel3.Location = new System.Drawing.Point(510, 551);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(475, 37);
-            this.panel3.TabIndex = 4;
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.lblMsg2);
             this.panel4.Controls.Add(this.lblcMsg1);
-            this.panel4.Location = new System.Drawing.Point(268, 113);
+            this.panel4.Location = new System.Drawing.Point(268, 116);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(720, 431);
-            this.panel4.TabIndex = 5;
+            this.panel4.TabIndex = 7;
             // 
             // label2
             // 
@@ -265,14 +258,15 @@
             // lblcMsg1
             // 
             this.lblcMsg1.AutoSize = true;
+            this.lblcMsg1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcMsg1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(162)))), ((int)(((byte)(164)))));
             this.lblcMsg1.Location = new System.Drawing.Point(272, 19);
             this.lblcMsg1.Name = "lblcMsg1";
-            this.lblcMsg1.Size = new System.Drawing.Size(165, 23);
+            this.lblcMsg1.Size = new System.Drawing.Size(166, 23);
             this.lblcMsg1.TabIndex = 0;
-            this.lblcMsg1.Text = "Welcome back!";
+            this.lblcMsg1.Text = "Welcome back ";
             // 
-            // Teacher_Homepage
+            // StudentHomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -283,11 +277,11 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(162)))), ((int)(((byte)(164)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Name = "Teacher_Homepage";
-            this.Text = "Teacher_Homepage";
-            this.Load += new System.EventHandler(this.Teacher_Homepage_Load);
+            this.Name = "StudentHomepage";
+            this.Text = "StudentHomepage";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -301,17 +295,17 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCalendar;
-        private System.Windows.Forms.Button btnClassManagement;
-        private System.Windows.Forms.Button btnStatistics;
-        private System.Windows.Forms.Button btnCorrectExams;
-        private System.Windows.Forms.Button btnCreateExam;
+        private System.Windows.Forms.Button btnClassroom;
+        private System.Windows.Forms.Button btnCheckResults;
+        private System.Windows.Forms.Button btnJoinACourse;
+        private System.Windows.Forms.Button btnGoToExam;
         private System.Windows.Forms.Button logo;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnMiniMax;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnProfile;
-        private System.Windows.Forms.DateTimePicker dateTime;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DateTimePicker dateTime;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblMsg2;
