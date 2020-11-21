@@ -150,6 +150,89 @@
     <Compile Include="TeacherUserControl1.Designer.cs">
       <DependentUpon>TeacherUserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student_ClassroomResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student_ClassroomResult.Designer.cs">
+      <DependentUpon>Student_ClassroomResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Calendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student_Calendar.Designer.cs">
+      <DependentUpon>Student_Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_CheckResults.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student_CheckResults.Designer.cs">
+      <DependentUpon>Student_CheckResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Classroom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student_Classroom.Designer.cs">
+      <DependentUpon>Student_Classroom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_ExamPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student_ExamPage.Designer.cs">
+      <DependentUpon>Student_ExamPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_ExamResults.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student_ExamResults.Designer.cs">
+      <DependentUpon>Student_ExamResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Homepage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student_Homepage.Designer.cs">
+      <DependentUpon>Student_Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student.Designer.cs">
+      <DependentUpon>Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_GoToExam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student_GoToExam.Designer.cs">
+      <DependentUpon>Student_GoToExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_JoinACourse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student_JoinACourse.Designer.cs">
+      <DependentUpon>Student_JoinACourse.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Student_ClassroomResult.resx">
+      <DependentUpon>Student_ClassroomResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Calendar.resx">
+      <DependentUpon>Student_Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_CheckResults.resx">
+      <DependentUpon>Student_CheckResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Classroom.resx">
+      <DependentUpon>Student_Classroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_ExamPage.resx">
+      <DependentUpon>Student_ExamPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_ExamResults.resx">
+      <DependentUpon>Student_ExamResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Homepage.resx">
+      <DependentUpon>Student_Homepage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -209,6 +292,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherUserControl1.resx">
       <DependentUpon>TeacherUserControl1.cs</DependentUpon>
+    <EmbeddedResource Include="Student.resx">
+      <DependentUpon>Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_GoToExam.resx">
+      <DependentUpon>Student_GoToExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_JoinACourse.resx">
+      <DependentUpon>Student_JoinACourse.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
