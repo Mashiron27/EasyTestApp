@@ -1,0 +1,16 @@
+CREATE TABLE [dbo].[Answers] (
+    [Id]               INT          NOT NULL,
+    [StudentID]        VARCHAR (50) NOT NULL,
+    [ExamID]           INT          NOT NULL,
+    [QuestionID]       INT          NOT NULL,
+    [OptionID]         INT          NULL,
+    [TextAnswer]       VARCHAR (50) NULL,
+    [isPhoto]          INT          NOT NULL,
+    [isMultipleChoice] INT          NOT NULL,
+    [photoPath]        VARCHAR (50) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [Student_ID_Answers] FOREIGN KEY ([StudentID]) REFERENCES [dbo].[Users] ([Id]),
+    CONSTRAINT [Exam_ID_Answers] FOREIGN KEY ([ExamID]) REFERENCES [dbo].[Exams] ([Id]),
+    CONSTRAINT [Question_ID_Answers] FOREIGN KEY ([QuestionID]) REFERENCES [dbo].[Questions] ([Id]),
+    CONSTRAINT [Option_ID_Answers] FOREIGN KEY ([OptionID]) REFERENCES [dbo].[Options] ([Id])
+);

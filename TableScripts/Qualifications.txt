@@ -1,0 +1,11 @@
+CREATE TABLE [dbo].[Qualifications] (
+    [Id]        INT          NOT NULL,
+    [StudentID] VARCHAR (50) NOT NULL,
+    [ExamID]    INT          NOT NULL,
+    [SubjectID] INT          NOT NULL,
+    [Mark]      FLOAT (53)   NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [Exam_ID_Qualifications] FOREIGN KEY ([ExamID]) REFERENCES [dbo].[Exams] ([Id]),
+    CONSTRAINT [Student_ID_Qualifications] FOREIGN KEY ([StudentID]) REFERENCES [dbo].[Users] ([Id]),
+    CONSTRAINT [Subject_ID_Qualifications] FOREIGN KEY ([SubjectID]) REFERENCES [dbo].[Subjects] ([Id])
+);
