@@ -1,0 +1,7 @@
+CREATE TABLE [dbo].[Subjects] (
+    [Id]        INT          NOT NULL,
+    [name]      NCHAR (10)   NOT NULL,
+    [TeacherID] VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [TeacherID] FOREIGN KEY ([TeacherID]) REFERENCES [dbo].[Users] ([Id])
+);

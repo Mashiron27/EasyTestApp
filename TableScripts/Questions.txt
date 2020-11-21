@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[Questions] (
+    [Id]                  INT          NOT NULL,
+    [ExamID]              INT          NOT NULL,
+    [QuestionDescription] VARCHAR (50) NOT NULL,
+    [isMultipleChoice]    INT          NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [Exam_ID_Questions] FOREIGN KEY ([ExamID]) REFERENCES [dbo].[Exams] ([Id])
+);
