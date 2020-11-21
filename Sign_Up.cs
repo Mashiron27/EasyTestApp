@@ -15,7 +15,7 @@ namespace EasyTestApp
 {
     public partial class Signupform : Form
     {
-        string connectionstring = "";//copy from db properties
+        string connectionstring = "Data Source=(LocalDB);Initial Catalog=EasyTestDB";//copy from db properties
         public Signupform()
         {
             InitializeComponent();
@@ -59,7 +59,7 @@ namespace EasyTestApp
             {
                 using (SqlConnection sqlCon = new SqlConnection(connectionstring))
                 {
-                    string query = "Select * from database_name Where Username = '" + txtUsername.Text.Trim() + "'";
+                    string query = "Select * from Users Where Username = '" + txtUsername.Text.Trim() + "'";
                     SqlDataAdapter sda = new SqlDataAdapter(query, sqlCon);
                     DataTable dtb1 = new DataTable();
                     sda.Fill(dtb1);
@@ -72,9 +72,9 @@ namespace EasyTestApp
                     SqlCommand sqlCmd = new SqlCommand("UserAdd", sqlCon);
                     //User add is the process of adding in set by the db, requires name changing
                     sqlCmd.CommandType = CommandType.StoredProcedure;
-                    sqlCmd.Parameters.AddWithValue("@Username", txtUsername.Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@Privileges", txtPrivileges.Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@Password", txtPassword.Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("username", txtUsername.Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("priviledges", txtPrivileges.Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("password", txtPassword.Text.Trim());
 
                     //change the @.... according to the db
                     sqlCmd.ExecuteNonQuery();

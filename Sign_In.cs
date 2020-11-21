@@ -47,8 +47,8 @@ namespace EasyTestApp
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlcon = new SqlConnection("");//again, db properties
-            string query = "Select * from database_name Where Username = '" + txtUsername.Text.Trim() + "' and Password = '"+txtPassword.Text.Trim()+"' ";
+            SqlConnection sqlcon = new SqlConnection("Data Source=(LocalDB);Initial Catalog=EasyTestDB");//again, db properties
+            string query = "Select * from Users Where username = '" + txtUsername.Text.Trim() + "' and password = '"+txtPassword.Text.Trim()+"' ";
             SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
             DataTable dtb1 = new DataTable();
             sda.Fill(dtb1);
