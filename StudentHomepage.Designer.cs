@@ -1,13 +1,13 @@
 ﻿namespace EasyTestApp
 {
-    partial class Student_Homepage
+    partial class StudentHomepage
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,10 +20,10 @@
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
@@ -59,10 +59,10 @@
             this.panel1.Controls.Add(this.btnJoinACourse);
             this.panel1.Controls.Add(this.btnGoToExam);
             this.panel1.Controls.Add(this.logo);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 550);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 2;
             // 
             // btnCalendar
             // 
@@ -158,10 +158,10 @@
             this.panel2.Controls.Add(this.btnClose);
             this.panel2.Controls.Add(this.btnMiniMax);
             this.panel2.Controls.Add(this.btnProfile);
-            this.panel2.Location = new System.Drawing.Point(467, 6);
+            this.panel2.Location = new System.Drawing.Point(458, 15);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(530, 95);
-            this.panel2.TabIndex = 3;
+            this.panel2.TabIndex = 4;
             // 
             // btnClose
             // 
@@ -210,10 +210,10 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.dateTime);
-            this.panel3.Location = new System.Drawing.Point(518, 560);
+            this.panel3.Location = new System.Drawing.Point(513, 551);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(475, 37);
-            this.panel3.TabIndex = 5;
+            this.panel3.TabIndex = 6;
             // 
             // dateTime
             // 
@@ -228,10 +228,10 @@
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.lblMsg2);
             this.panel4.Controls.Add(this.lblcMsg1);
-            this.panel4.Location = new System.Drawing.Point(273, 104);
+            this.panel4.Location = new System.Drawing.Point(268, 116);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(720, 431);
-            this.panel4.TabIndex = 6;
+            this.panel4.TabIndex = 7;
             // 
             // label2
             // 
@@ -266,20 +266,22 @@
             this.lblcMsg1.TabIndex = 0;
             this.lblcMsg1.Text = "Welcome back ";
             // 
-            // Student_Homepage
+            // StudentHomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.Name = "Student_Homepage";
-            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Size = new System.Drawing.Size(1000, 600);
+            this.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(162)))), ((int)(((byte)(164)))));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Name = "StudentHomepage";
+            this.Text = "StudentHomepage";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

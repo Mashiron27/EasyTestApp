@@ -1,0 +1,11 @@
+CREATE TABLE [dbo].[Exams] (
+    [Id]        INT          NOT NULL,
+    [TeacherID] VARCHAR (50) NOT NULL,
+    [SubjectID] INT          NOT NULL,
+    [Date]      DATE         NOT NULL,
+    [TimeLimit] INT          NOT NULL,
+    [Info]      VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [Subject_ID] FOREIGN KEY ([SubjectID]) REFERENCES [dbo].[Subjects] ([Id]),
+    CONSTRAINT [Teacher_ID] FOREIGN KEY ([TeacherID]) REFERENCES [dbo].[Users] ([Id])
+);

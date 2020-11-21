@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[Studies] (
+    [Id]        INT          NOT NULL,
+    [SubjectID] INT          NOT NULL,
+    [StudentID] VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [SubjectID] FOREIGN KEY ([SubjectID]) REFERENCES [dbo].[Subjects] ([Id]),
+    CONSTRAINT [StudentID] FOREIGN KEY ([StudentID]) REFERENCES [dbo].[Users] ([Id])
+);
